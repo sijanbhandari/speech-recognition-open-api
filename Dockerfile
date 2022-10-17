@@ -2,7 +2,6 @@ FROM gcr.io/ekstepspeechrecognition/speech-recognition-open-api-dependency:4.4
 
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y sudo wget python3-pip
 
 RUN mkdir /opt/speech_recognition_open_api/
